@@ -5,8 +5,8 @@ class Stack:
         self.stack = []
 
     def append(self):
-
         return 
+    
     def pop(self):
         return 
     
