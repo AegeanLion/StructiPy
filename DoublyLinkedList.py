@@ -64,14 +64,70 @@ class DoublyLinkedList:
         current_node = self.head
         position =1
 
-        if not self.head: 
+        if not self.head:
             return None
-        elif self.length() == 1 or position==index:
-            pass
+        elif self.length()==1 or position==index:
+            popped_node = self.head
+
+            if popped_node.next ==None:
+                self.head = None
+                return popped_node
+            else:
+                self.head = popped_node.next
+                return popped_node
+        elif index == None:
+            popped_node = self.tail()
+            popped_node.prev.next = None
+            return popped_node
+        else:
+            position = 1
+
+            while current_node:
+                if position==index and current_node.next:
+                    popped_node = current_node.next
+                    current_node.next = popped_node.next
+                    return popped_node
+                else:
+                    position+=1
+                    current_node = current_node.next
             
     
-    def display(self, current_node):
-        return 
+    def display(self, current_node=None):
+        node_table = []
+         
+        if current_node ==None:
+            if self.head ==None:
+                return
+            else:
+                current_node = self.head
+
+        if current_node.next==None:
+            node_table.append(current_node.val)
+            node_table.append(None)
+        else:
+            node_table.append(current_node.val)
+            node_table.append(self.display(current_node.next))
+
+        return node_table
     
     def get_node(self, index=None):
-        return 
+        current_node = self.head
+        position = 0
+
+        if self.head==None or index==None:
+            return None
+        elif position==index:
+            return current_node
+        else:
+            position = 1
+            current_node = current_node.next
+
+            while current_node:
+                if position==index:
+                    return current_node
+                else:
+                    position+=1
+                    current_node = current_node.next
+                    
+            return None
+

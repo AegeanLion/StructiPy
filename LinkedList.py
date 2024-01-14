@@ -96,6 +96,9 @@ class LinkedList:
                     popped_node = current_node.next
                     current_node.next = popped_node.next
                     return popped_node
+                else:
+                    position +=1 
+                    current_node = current_node.next
                 
         return 
 
@@ -116,7 +119,7 @@ class LinkedList:
             node_table.append(current_node.val)
             node_table.append(self.display(current_node.next))
 
-        print(node_table)   
+        return node_table  
     
 
     def get_node(self, index=None):
