@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
 	name='StructiPy',
@@ -7,6 +7,6 @@ setup(
 	author='Erim Keresteci',
 	author_email='aegeanlion@gmail.com',
 	description='This package contains widely used data structures as well as some methods to traverse them. This library is made for convenience so that you don not need to program your own data structures from scratch.',
-	packages=find_packages('LinkedList'),
+	packages=['LinkedList']
 	install_requires=None
 	)
