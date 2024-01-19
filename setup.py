@@ -1,4 +1,5 @@
 from setuptools import setup, find_packages
+import LinkedList
 
 setup(
 	name='StructiPy',
