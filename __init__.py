@@ -1,3 +1,3 @@
-from LinkedList import *
+#from LinkedList import *
 
-__all__ = [LinkedList, LinkedNode]
+#__all__ = [LinkedList, LinkedNode]
