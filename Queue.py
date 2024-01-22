@@ -14,5 +14,11 @@ class Queue:
     def length(self):
         return
     
+    def get_first(self):
+        return 
+    
+    def get_last(self):
+        return
+    
     def display(self):
         print()
