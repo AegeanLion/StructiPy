@@ -1,8 +1,8 @@
 class Stack:
     def __init__(self, max_size=None):
-        self.top = self.get_top()
-        self.max = max_size
         self.stack = []
+        self.max = max_size
+        self.top = self.get_top()
 
     def append(self, val):
         if self.max == None:
