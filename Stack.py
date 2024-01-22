@@ -21,6 +21,7 @@ class Stack:
             return None
         
     def get_top(self):
+        top = 0
         for i in self.stack:
             top = i
         return top
