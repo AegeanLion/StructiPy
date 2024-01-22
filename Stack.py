@@ -21,7 +21,7 @@ class Stack:
             return None
         
     def get_top(self):
-        return self.stack[len(self.stack)-1]
+        return self.stack[-1]
     
     def print(self):
         print(self.stack) 
