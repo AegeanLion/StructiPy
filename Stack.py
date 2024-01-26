@@ -2,7 +2,6 @@ class Stack:
     def __init__(self, max_size=None):
         self.stack = []
         self.max = max_size
-        self.top = self.get_top()
 
     def append(self, val):
         if self.max == None:
@@ -20,7 +19,7 @@ class Stack:
         else:
             return None
         
-    def get_top(self):
+    def top(self):
         return self.stack[len(self.stack)-1]
     
     def print(self):

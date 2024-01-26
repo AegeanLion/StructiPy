@@ -1,10 +1,8 @@
 class Queue:
     def __init__(self, max_size=None):
-        self.first = None
-        self.last = None
-        self.max = max_size 
+        self.max = max_size
+        self.queue = []
         
-    
     def push(self):
         return 
     
@@ -14,10 +12,10 @@ class Queue:
     def length(self):
         return
     
-    def get_first(self):
+    def first(self):
         return 
     
-    def get_last(self):
+    def last(self):
         return
     
     def display(self):
