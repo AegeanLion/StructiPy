@@ -19,8 +19,8 @@ class Stack:
         else:
             return None
         
-    def top(self):
-        return self.stack[len(self.stack)-1]
+    def get_top(self):
+        return self.stack[-1]
     
     def print(self):
         print(self.stack) 
