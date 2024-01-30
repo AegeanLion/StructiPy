@@ -92,7 +92,7 @@ class DoublyLinkedList:
                     current_node = current_node.next
             
     
-    def display(self, current_node=None):
+    def __display(self, current_node=None):
         node_table = []
          
         if current_node ==None:
@@ -106,9 +106,12 @@ class DoublyLinkedList:
             node_table.append(None)
         else:
             node_table.append(current_node.val)
-            node_table.append(self.display(current_node.next))
+            node_table.append(self.__display(current_node.next))
 
         return node_table
+
+    def print(self, current_node=None):
+        print(self.__display(current_node))
     
     def get_node(self, index=None):
         current_node = self.head
