@@ -6,7 +6,7 @@ class Queue:
     def push(self):
         return 
     
-    def pop(self):
+    def append(self):
         return 
     
     def length(self):
