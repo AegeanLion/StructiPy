@@ -103,7 +103,7 @@ class LinkedList:
         return 
 
     
-    def display(self, current_node=None):
+    def __display(self, current_node=None):
         node_table = []
 
         if current_node==None:
@@ -121,7 +121,9 @@ class LinkedList:
 
         return node_table  
     
-
+    def print(self, current_node=None):
+        print(self.display(current_node))
+    
     def get_node(self, index=None):
         current_node = self.head
         position = 0
