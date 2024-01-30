@@ -122,7 +122,7 @@ class LinkedList:
         return node_table  
     
     def print(self, current_node=None):
-        print(self.display(current_node))
+        print(self.__display(current_node))
     
     def get_node(self, index=None):
         current_node = self.head
