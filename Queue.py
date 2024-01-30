@@ -24,9 +24,9 @@ class Queue:
             self.queue.append(val)
         else:
             if len(self.queue) == self.max:
-                self.push()
+                out = self.push()
                 self.queue.append(val)
-                return None
+                return out
             else:
                 self.queue.append(val)
                 return None
@@ -42,3 +42,18 @@ class Queue:
     
     def print(self):
         print(self.queue)
+
+def queueify(_list, max_size=None):
+    if max_size == None:
+        q = Queue()
+        q.queue = _list
+        return q
+    else:
+        q = Queue(max_size)
+
+        if len(_list) <= max_size:
+            q.queue = _list
+        else:
+            q.queue = _list[:max_size]
+
+    return q
