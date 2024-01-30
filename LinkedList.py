@@ -117,7 +117,7 @@ class LinkedList:
             node_table.append(None)
         else:
             node_table.append(current_node.val)
-            node_table.append(self.display(current_node.next))
+            node_table.append(self.__display(current_node.next))
 
         return node_table  
     
