@@ -19,7 +19,7 @@ class Stack:
         else:
             return None
         
-    def get_top(self):
+    def peak(self):
         return self.stack[-1]
     
     def print(self):
