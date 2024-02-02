@@ -42,10 +42,3 @@ class BinaryTree:
     
     def display(self, node):
         return 
-
-    
-def bfs():
-    return
-
-def dfs():
-    return
