@@ -11,9 +11,6 @@ class BinaryTree:
     def leaves(self):
         return 
     
-    def get_node(self):
-        return 
-    
     def insert(self, val=None, current_node=self.root):
         appended_node = BinaryNode(val)
         
