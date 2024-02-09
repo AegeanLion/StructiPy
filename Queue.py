@@ -3,9 +3,9 @@ class Queue:
         self.max = max_size
         self.queue = []
         
-    def push(self):
+    def dequeue(self):
         if len(self.queue) != 0:
-            return self.queue.push()
+            return self.queue.pop(0)
         else:
             return None
     
@@ -24,7 +24,7 @@ class Queue:
             self.queue.append(val)
         else:
             if len(self.queue) == self.max:
-                out = self.push()
+                out = self.dequeue()
                 self.queue.append(val)
                 return out
             else:
