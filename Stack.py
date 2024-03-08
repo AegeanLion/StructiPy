@@ -14,8 +14,7 @@ class Stack:
                 return None
     
     def pop(self):
-        if len(self.stack) != 0:
-            return self.stack.pop()
+        return self.stack.pop()
         
     def peak(self):
         return self.stack[-1]
