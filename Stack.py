@@ -16,8 +16,6 @@ class Stack:
     def pop(self):
         if len(self.stack) != 0:
             return self.stack.pop()
-        else:
-            return None
         
     def peak(self):
         return self.stack[-1]
@@ -26,7 +24,7 @@ class Stack:
         print(self.stack) 
     
     def length(self):
-        return f"{len(self.stack)}/{self.max}"
+        return len(self.stack)
     
 def stackify(_list, max_size=None):
     if max_size==None:
