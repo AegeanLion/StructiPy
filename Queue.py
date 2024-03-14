@@ -32,7 +32,7 @@ class Queue:
                 return None
     
     def length(self):
-        return f"{len(self.stack)}/{self.max}"
+        return len(self.queue)
     
     def head(self):
         return self.queue[0]
