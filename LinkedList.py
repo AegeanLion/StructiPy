@@ -145,15 +145,6 @@ class LinkedList:
             
             return None
 
-    def loop(self):
-        head = None
-        tail = self.tail()
-        
-        if self.head:
-            head = self.head
-        else:
-            return None
-
         tail.next = head
         
         
